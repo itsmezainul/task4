@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.containerr {
+  background: hsla(197, 100%, 63%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#to-do {
+  width: 100%;
+  max-width: 540px;
+  background-color: aliceblue;
+  max-height: 90vh;
+  overflow-y: hidden;
+}
+
+.input input {
+  height: 50px;
+  width: 90%;
+  outline: none;
+}
+
+.input span {
+  height: 50px;
+  width: 30%;
+  right: 0;
+  line-height: 2.2;
+  font-weight: bold;
+  background-attachment: var(--secondary) !important;
+}
+
+ul {
+  overflow-y: scroll;
+  max-height: calc(100vh - 200px);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+ul li {
+  color: #555;
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  margin: 14px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li:hover {
+  color: #929191;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url(assets/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12;
+  left: 8px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(assets/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  font-size: 1.2rem;
+  text-align: center;
+  right: 0;
+  color: #555;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+#list > li > span:hover {
+  color: blue;
+}

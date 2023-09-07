@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script defer src="./index.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="containerr p-5 m-auto">
+      <div class="mx-auto p-3 rounded-3" id="to-do">
+        <h2 class="text-center">
+          To-do List
+          <img
+            class="align-self-center ms-2"
+            src="./assets/todo.png"
+            width="32px"
+          />
+        </h2>
+        <div class="row input position-relative my-4">
+          <input
+            id="input-bx"
+            class="rounded-5 border-0 mx-auto ps-4"
+            type="text"
+            placeholder="Enter Your Text"
+          />
+          <span
+            class="btn position-absolute btn-primary rounded-5 text-center align-content-center me-3 me-md-4"
+            onclick="onAdd()"
+            >Add</span
+          >
+        </div>
+        <ul id="list" class="pb-5">
+          <!-- <li class="checked">task</li>
+          <li>task</li>
+          <li>task</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
